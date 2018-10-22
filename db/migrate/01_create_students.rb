@@ -2,7 +2,7 @@ class CreateStudents < ActiveRecord::Migration[5.1]
   def change
     def self.create_table
       sql = <<-SQL
-      CREATE TABLE IF NOT EXISTS students (
+      CREATE TABLE students (
         id INTEGER PRIMARY KEY,
         name STRING
       )
